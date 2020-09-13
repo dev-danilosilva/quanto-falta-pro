@@ -1,0 +1,69 @@
+:root{
+    --primary-color: #ec8138;
+    --background-color: #222;
+    --light-color: rgba(255, 255, 255, .4);
+    --scalar-countdown-display: #EEEEEE;
+    --label-countdown-display: #EDEDED;
+}
+/*  - laranja legal */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.countdown-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: var(--light-color) solid 5  px;
+    border-radius: 50%;
+}
+
+.box:nth-child(1){
+    border-left-color: var(--primary-color);
+}
+.box:nth-child(2){
+    border-top-color: var(--primary-color);
+}
+.box:nth-child(3){
+    border-right-color: var(--primary-color);
+}
+.box:nth-child(4){
+    border-bottom-color: var(--primary-color);
+}
+
+.countdown-display{
+    color: var(--scalar-countdown-display);
+    font-size: 30px;
+}
+
+.display-label{
+    color: var(--label-countdown-display);
+    margin: 3px;
+}

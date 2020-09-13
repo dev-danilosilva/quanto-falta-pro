@@ -1,3 +1,3 @@
-# Quanto Falta pro Natal ?
+# Quanto Falta pro ?
 
-## Countdown to christmas  eve.
+## Countdown to brazilian holidays

@@ -1,9 +1,14 @@
 :root{
     --primary-color: #ec8138;
     --background-color: #222;
-    --light-color: rgba(255, 255, 255, .4);
+    --light-down-color: rgba(255, 255, 255, .4);
+    --light-color: #FFF;
     --scalar-countdown-display: #EEEEEE;
     --label-countdown-display: #EDEDED;
+    --title-container-height: 20%;
+    --holiday-selector-container-height: 10%;
+    --countdown-container-height: 50%;
+    --footer-container-height: 20%;
 }
 /*  - laranja legal */
 *{
@@ -13,7 +18,9 @@
 }
 
 html, body {
-    font-family: sans-serif;
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    color: var(--light-color);
 }
 
 .container{
@@ -31,6 +38,8 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: var(--countdown-container-height);
+    width: 100vw;
 }
 
 .box {
@@ -41,7 +50,7 @@ html, body {
     width: 200px;
     height: 200px;
     margin: 20px;
-    border: var(--light-color) solid 5px;
+    border: var(--light-down-color) solid 5px;
     border-radius: 50%;
 }
 
@@ -60,10 +69,54 @@ html, body {
 
 .countdown-display{
     color: var(--scalar-countdown-display);
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .display-label{
     color: var(--label-countdown-display);
     margin: 3px;
+}
+
+.title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--title-container-height);
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.title-container h1{
+    font-size: 2rem;
+}
+
+.holiday-selector-container{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: var(--holiday-selector-container-height);
+    width: 100%;
+}
+
+.holiday-selector-container #holiday-selector{
+    width: 300px;
+    height: 70%;
+    text-align: center;
+}
+
+.holiday-selector-container #holiday-selector{
+    width: 300px;
+    height: 70%;
+    background-color: transparent;
+    color: var(--light-color);
+    border: var(--primary-color) solid 2px;
+    text-align-last: center;
+}
+
+.holiday-selector-container #holiday-selector .option:focus{
+    border: inherit;
+}
+
+.footer-container{
+    height: var(--footer-container-height);
 }

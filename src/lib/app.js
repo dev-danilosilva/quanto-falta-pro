@@ -2,7 +2,8 @@ class App{
     _state = {
         log: [],
         cached_data: null,
-        feriados: null
+        feriados: null,
+        countdown: null
     }
 
     static _instance = null;
@@ -30,13 +31,14 @@ class App{
 
         this._state.feriados = FeriadoBuilder.build(this._state.cached_data);
 
-        const countdown = new Countdown();
+        this._state.countdown = new Countdown();
 
-        countdown.from(this.state.feriados[0].next.date).start();
+        this.state.countdown.from(this.state.feriados[0].next.date).start();
     }
 
     async stop() {
         console.log('Closing Services...');
+        this.state.countdown.stop();
         App._instance = null;
     }
 

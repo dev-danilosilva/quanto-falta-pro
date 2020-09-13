@@ -4,35 +4,48 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
     <meta name="description" content="Natal, Ano Novo, aniversário ... Descubra quanto tempo falta para a suas datas e feriados favoritos.">
     <meta name=viewport content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="images/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <title>Quanto Falta Pro ...</title>
 </head>
 <body>
     <div id="app">
         <div class="container">
+            <div class="title-container">
+                <h1>Quanto Tempo Falta ?</h1>
+            </div>
+            <div class="holiday-selector-container">
+                <select name="holiday" id="holiday-selector">
+                    <option class="option" value="0">Natal</option>
+                    <option class="option" value="1">Ano Novo</option>
+                    <option class="option" value="2">Pascoa</option>
+                    <option class="option" value="3">Meu Aniversário</option>
+                </select>
+            </div>
             <div class="countdown-wrapper">
                 <div class="box">
                     <div class="countdown-display" id="days"></div>
-                    <div class="display-label">Days</div>
+                    <div class="display-label">Dias</div>
                 </div>
 
                 <div class="box">
                     <div class="countdown-display" id="hours"></div>
-                    <div class="display-label">Hours</div>
+                    <div class="display-label">Horas</div>
                 </div>
 
                 <div class="box">
                     <div class="countdown-display" id="minutes"></div>
-                    <div class="display-label">Minutes</div>
+                    <div class="display-label">Minutos</div>
                 </div>
 
                 <div class="box">
                     <div class="countdown-display" id="seconds"></div>
-                    <div class="display-label">Seconds</div>
+                    <div class="display-label">Segundos</div>
                 </div>
             </div>
-
+            <footer class="footer-container"></footer>
         </div>
     </div>
     <script src="lib/dated/dated.js" defer></script>

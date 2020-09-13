@@ -41,7 +41,7 @@ html, body {
     width: 200px;
     height: 200px;
     margin: 20px;
-    border: var(--light-color) solid 5  px;
+    border: var(--light-color) solid 5px;
     border-radius: 50%;
 }
 

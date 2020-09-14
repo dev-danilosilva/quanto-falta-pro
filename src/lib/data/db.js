@@ -23,6 +23,12 @@ const mocked_data = {
             day: 16,
             month: 2,
             year: 2021
+        },
+        {
+            label: "dia das crianças",
+            day: 12,
+            month: 10,
+            year: 2021
         }
     ]
 }

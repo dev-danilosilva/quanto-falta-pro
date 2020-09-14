@@ -39,6 +39,8 @@ class Countdown {
     }
 
     start(){
+        if (this.scheduler) clearInterval(this.scheduler);
+
         const f = () => {
             const delta = (this._fromDate - new Date()) / 1000;
 

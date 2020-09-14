@@ -8,7 +8,7 @@ const mocked_data = {
         },
         {
             label: "pascoa",
-            day: 6,
+            day: 4,
             month: 4,
             year: 2021
         },

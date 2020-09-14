@@ -31,7 +31,6 @@ html, body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-
 }
 
 .countdown-wrapper{
@@ -111,10 +110,13 @@ html, body {
     color: var(--light-color);
     border: var(--primary-color) solid 2px;
     text-align-last: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 5px;
 }
 
-.holiday-selector-container #holiday-selector .option:focus{
-    border: inherit;
+.holiday-selector-container #holiday-selector{
+    outline: none;
 }
 
 .footer-container{
